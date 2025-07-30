@@ -9,7 +9,7 @@ ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "fmtb mbzy xidg vpql")  # Use 
 
 app = Flask(__name__)
 CORS(app,origins=["http://127.0.0.1:8000/"])  # This enables CORS for all routes 
-import pickle
+import pickle 
 model = pickle.load(open("liver_prediction.pkl","rb"))
 
 @app.route("/")
