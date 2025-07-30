@@ -8,7 +8,7 @@ ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL", "thathieswarreddy@gmail.com")
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "fmtb mbzy xidg vpql")  # Use app password for Gmail
 
 app = Flask(__name__)
-CORS(app,origins=["http://127.0.0.1:8000/"])  # This enables CORS for all routes
+CORS(app,origins=["http://127.0.0.1:8000/"])  # This enables CORS for all routes 
 import pickle
 model = pickle.load(open("liver_prediction.pkl","rb"))
 
